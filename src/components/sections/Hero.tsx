@@ -127,7 +127,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-gradient-to-tr from-brand-100 to-lavender-100 dark:from-brand-900 dark:to-lavender-900 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] shadow-2xl animate-[morph_8s_ease-in-out_infinite] overflow-hidden border-4 border-white/30 dark:border-white/10 backdrop-blur-md flex items-center justify-center">
             
              {/* Actual Image (Placeholder for now) */}
-             <div className="w-full h-full bg-[url('/images/hero-placeholder.svg')] bg-cover bg-center opacity-90 hover:scale-105 transition-transform duration-700" role="img" aria-label="Ambiance institut de beauté" />
+             <div className="w-full h-full bg-[url('https://placehold.co/1200x800/D4A5A5/ffffff?text=AGNES+INSTITUT')] bg-cover bg-center opacity-90 hover:scale-105 transition-transform duration-700" role="img" aria-label="Ambiance institut de beauté" />
              
              {/* Overlay Gradient */}
              <div className="absolute inset-0 bg-gradient-to-t from-brand-500/20 to-transparent pointer-events-none" />
