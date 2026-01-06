@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Fonts: Cormorant Garamond (headings) + Lato (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Theme detection (prevent FOUC) -->
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (theme === 'dark' || (!theme && systemDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    
+    <!-- SEO Meta Tags -->
+    <title>Agnès Institut | Institut de Beauté à Salles (33770)</title>
+    <meta name="description" content="Institut de beauté et bien-être à Salles. Soins visage, épilations, massages. Plus de 510 avis 5 étoiles. Prenez rendez-vous avec Agnès." />
+    <meta name="keywords" content="institut de beauté Salles, esthétique, soins visage, épilation, massage, bien-être, 33770, Gironde" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Agnès Institut | Institut de Beauté à Salles" />
+    <meta property="og:description" content="Votre havre de beauté au cœur de Salles. 510+ avis 5 étoiles." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
