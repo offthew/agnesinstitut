@@ -1,0 +1,35 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg" aria-labelledby="heroTitle">
+  <title id="heroTitle">Relaxing Spa Ambiance Placeholder</title>
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f4f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ede0e0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#bgGradient)" />
+  
+  <!-- Abstract Organic Shapes representing relaxation -->
+  <path d="M0,400 Q300,350 600,450 T1200,400 V600 H0 Z" fill="#D4A5A5" opacity="0.2" />
+  <path d="M0,500 Q400,450 800,550 T1200,500 V600 H0 Z" fill="#9B8AA5" opacity="0.15" />
+  
+  <circle cx="900" cy="200" r="150" fill="#D4A5A5" opacity="0.05" filter="url(#softGlow)" />
+  <circle cx="200" cy="100" r="80" fill="#9B8AA5" opacity="0.05" filter="url(#softGlow)" />
+
+  <!-- Center composition hint -->
+  <g transform="translate(600, 300)" text-anchor="middle" font-family="'Cormorant Garamond', serif" fill="#7a6b7a">
+    <text y="-20" font-size="24" font-style="italic">Image Placeholder</text>
+    <text y="20" font-size="36" font-weight="300">Calming Spa Ambiance</text>
+    <text y="60" font-size="16" opacity="0.7">Soft Lighting • Treatment Room • Elegant Products</text>
+  </g>
+  
+  <!-- Frame/Border hint -->
+  <rect x="50" y="50" width="1100" height="500" rx="4" fill="none" stroke="#D4A5A5" stroke-width="1" opacity="0.3" stroke-dasharray="10 5" />
+</svg>
